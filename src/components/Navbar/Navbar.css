@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
+
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -11,8 +13,9 @@
 }
 
 .navbar-logo a {
-    color: white;
-    font-size: 50px;
+    font-family: Roboto;
+    color: black;
+    font-size: 45px;
     text-decoration: none;
 }
 
@@ -30,5 +33,5 @@
 }
 
 .navbar-links a:hover {
-    opacity: 70%;
+    opacity: 60%;
 }
