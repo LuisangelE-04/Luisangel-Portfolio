@@ -1,4 +1,7 @@
 import './Navbar.css'
+//import About from '../About/About'
+//import Experience from '../Experience/Experience'
+//import Projects from '../Projects/Projects'
 
 const Navbar = () => {
     return (
@@ -7,9 +10,9 @@ const Navbar = () => {
                 <a href="/">LE</a>
             </div>
             <div className="navbar-links">
-                <a href="/create">About Me</a>
-                <a href="/create">My Projects</a>
-                <a href="/create">My Experience</a>
+                <a href="#About">About Me</a>
+                <a href="#Experience">Experience</a>
+                <a href="#Projects">Projects</a>
             </div>
         </nav>
     );

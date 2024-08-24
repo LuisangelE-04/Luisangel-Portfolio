@@ -1,0 +1,25 @@
+.about {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 90px;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+}
+
+.about-text {
+    max-width: 70%;
+}
+
+.about-text p {
+    color: black;
+    font-size: 35px;
+}
+
+.about-images {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
