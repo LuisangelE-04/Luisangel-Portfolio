@@ -9,11 +9,6 @@ const About = () => {
 
                 </p>
             </div>
-            <div className="about-images">
-                <p>Image 1</p>
-                <p>Image 2</p>
-                <p>Image 3</p>
-            </div>
         </div>
     );
 }
