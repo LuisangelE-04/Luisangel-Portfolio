@@ -1,11 +1,74 @@
+.about-grid {
+    display: grid;
+}
+
+
+
+/*
+.about {
+    display: flex;
+    flex-direction: column;
+    height: 75vh;
+    padding-top: 25vh;
+    align-items: center;
+}
+
+.about-content {
+    display: flex;
+    flex-direction: row;
+    border-style: solid;
+    border-width: 5px;
+    border-radius: 35px;
+    width: 70%;
+    height: 350px;
+    justify-content: center;
+}
+
+.about-images {
+    display: flex;
+    width: 30%;
+    justify-content: center;
+}
+
+.about-images svg {
+    transform: translateY(80px);
+    width: 200px;
+    height: 200px;
+}
+
+.about-text {
+    width: 70%;
+    font-size: 25px;
+}
+/*
 .about {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    padding-top: 90px;
+    padding-top: 25vh;
     align-items: center;
     text-align: center;
-    height: 100vh;
+    height: 75vh;
+    position: relative;
+    /*
+    border-style: solid;
+    border-radius: 5%;
+    border-width: 5px;
+    
+}
+
+/*
+Content, Padding, Border, Margin
+
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-style: solid;
+    border-width: 5px;
+    border-radius: 8%;
+    width: 80%;
 }
 
 .about-text {
@@ -21,5 +84,19 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 15px;
+    gap: 50px;
 }
+
+.about-images svg {
+    width: 270px;
+    height: 270px;
+}
+
+.about-images .UHLogo {
+    transition: transform 0.25s ease-in-out, filter 0.3s ease-in-out;
+}
+
+.about-images .UHLogo:hover {
+    transform: scale(1.05);
+}
+*/

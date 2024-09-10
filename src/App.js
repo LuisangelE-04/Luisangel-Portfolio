@@ -6,7 +6,9 @@ import Projects from './components/Projects/Projects';
 function App() {
   return (
     <div>
-      <Navbar />
+      <div id="Navigation">
+        <Navbar />
+      </div>
       <div id="About">
         <About />
       </div>
