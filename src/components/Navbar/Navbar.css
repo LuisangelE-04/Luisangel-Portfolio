@@ -12,6 +12,7 @@ nav {
     align-items: center;
     background-color: antiquewhite;
     box-shadow: 0 2px 25px rgba(0, 0, 0, 0.1);
+    text-wrap: nowrap;
 }
 
 /*
@@ -43,10 +44,10 @@ nav {
 .navbar-links a {
     display: grid;
     place-items: center;
-    padding: 10px;
+    padding: 0.5rem;
     text-decoration: none;
     color: black;
-    font-size: 25px;
+    font-size: 1.5rem;
     margin: 15px;
 }
 
