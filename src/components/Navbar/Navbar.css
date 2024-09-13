@@ -14,6 +14,16 @@ nav {
     box-shadow: 0 2px 25px rgba(0, 0, 0, 0.1);
 }
 
+nav h1 {
+    width: 50px;
+    font-size: 25px;
+}
+
+nav h1 a {
+    text-decoration: none;
+    color: black;
+}
+
 /*
 .end {
     flex: 0 0 200px;

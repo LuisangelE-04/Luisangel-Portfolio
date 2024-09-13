@@ -19,6 +19,7 @@ const Navbar = () => {
                     <span className="navbar-outline">Projects</span>
                 </a>
             </div>
+            <h1 className="navbar-contact"><a href="#Projects">Contact</a></h1>
         </nav>
     );
 }
