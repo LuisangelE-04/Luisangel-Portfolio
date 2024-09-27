@@ -18,6 +18,9 @@ const Navbar = () => {
                 <a href="#Projects">
                     <span className="navbar-outline">Projects</span>
                 </a>
+                <a href="">
+                    <span className="navbar-outline">Contact</span>
+                </a>
             </div>
         </nav>
     );
