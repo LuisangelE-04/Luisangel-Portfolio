@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Luisangel-Portfolio/static/css/main.cb184478.css",
+    "main.js": "/Luisangel-Portfolio/static/js/main.a1e41894.js",
+    "index.html": "/Luisangel-Portfolio/index.html",
+    "main.cb184478.css.map": "/Luisangel-Portfolio/static/css/main.cb184478.css.map",
+    "main.a1e41894.js.map": "/Luisangel-Portfolio/static/js/main.a1e41894.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cb184478.css",
+    "static/js/main.a1e41894.js"
+  ]
+}
