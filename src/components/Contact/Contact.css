@@ -1,0 +1,9 @@
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 90px;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+}
