@@ -18,15 +18,23 @@
     <link rel="stylesheet" href="css/landing.css" >
     <link rel="stylesheet" href="css/about.css" >
     <link rel="stylesheet" href="css/media.css" >
-    <script src="js/script.js"></script>
+    <script src="js/script.js" defer></script>
 
     <title>Luisangel</title>
   </head>
   <body>
     <header>
       <nav>
-        <h1><a href="">LE</a></h1>
-        <ul>
+
+        <div id="nav-mobile-header" class="nav-mobile-header">
+          <h1><a href="">LE</a></h1>
+          <div class="nav-menu-btn" id="nav-menu-btn">
+            <div id="menu-icon" class="menu-icon"><i class="ri-menu-line">
+              <img src="images/navigation/menu-line.svg" alt="hamburger-menu">
+            </i></div>
+          </div>
+        </div>
+        <ul id="nav-links" class="nav-links">
           <li><a href="#about"><span>About Me</span></a></li>
           <li><a href=""><span>Experience</span></a></li>
           <li><a href=""><span>Projects</span></a></li>
@@ -55,8 +63,7 @@
       </section>
 
       <section class="about" id="about">
-        <h1>About Me</h1>
-
+        
       </section>
     </main>
 

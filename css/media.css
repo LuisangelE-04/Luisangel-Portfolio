@@ -1,8 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Jura:wght@300..700&display=swap");
+
 :root {
   font-size: 16px;
 }
 
 /* Navbar */
+
+@media (min-width: 571px) {
+  .menu-icon {
+    display: none;
+  }
+}
 
 @media (max-height: 650px) {
   header {
@@ -21,16 +29,75 @@
 }
 
 @media (max-width: 570px) {
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
   header {
-    height: 2.5rem;
+    all: unset;
   }
   
   nav h1 {
     font-size: 1.5rem;
   }
 
-  nav ul {
-    display: none;
+  nav {
+    all: unset;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 9;
+  }
+
+  a {
+    text-decoration: none;
+    transition: 0.3s;
+  }
+
+  .nav-mobile-header {
+    position: fixed;
+    padding: 1rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 10;
+    background-color: #faebd7;
+    box-shadow: 0 2px 1.5rem 0px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.5s ease-out;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 2rem;
+    width: 100%;
+    padding: 2rem;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    background-color: #faebd7;
+    transition: 0.5s;
+    transform: translateY(-100%);
+    z-index: 9;
+  }
+
+  .nav-menu-btn {
+    cursor: pointer;
+  }
+
+  .nav-links.open {
+    transform: translateY(0);
+    box-shadow: 0 2px 1.5rem 0px rgba(0, 0, 0, 0.1);
+  }
+
+  img {
+    width: 1.5rem;
   }
 }
 
