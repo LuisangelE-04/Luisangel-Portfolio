@@ -20,4 +20,6 @@ menuBtn.addEventListener("click", (e) => {
 navLinks.addEventListener("click", (e) => {
   navLinks.classList.remove("open");
   menuBtnIcon.setAttribute("class", "ri-menu-line");
+
+  mobileHeader.style.boxShadow = "0 2px 1.5rem 0px rgba(0, 0, 0, 0.1)";
 });

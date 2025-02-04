@@ -67,7 +67,7 @@
     z-index: 10;
     background-color: #faebd7;
     box-shadow: 0 2px 1.5rem 0px rgba(0, 0, 0, 0.1);
-    transition: box-shadow 0.5s ease-out;
+    transition: box-shadow 0.5s ease-in;
   }
 
   .nav-links {
