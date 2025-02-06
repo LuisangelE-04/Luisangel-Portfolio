@@ -10,6 +10,9 @@
   .menu-icon {
     display: none;
   }
+  .nav-mobile-header {
+    height: fit-content;
+  }
 }
 
 @media (max-height: 650px) {
