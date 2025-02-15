@@ -68,16 +68,20 @@ p {
 
 @keyframes scaleUpDown {
   0% {
+    -webkit-transform: scale(1) rotate(-45deg);;
     transform: scale(1) rotate(-45deg);
   }
   50% {
+    -webkit-transform: scale(1.5) rotate(-45deg);
     transform: scale(1.5) rotate(-45deg);
   }
   100% {
+    -webkit-transform: scale(1) rotate(-45deg);
     transform: scale(1) rotate(-45deg);
   }
 }
 
 .heart-big {
+  -webkit-animation: scaleUpDown 2s ease;
   animation: scaleUpDown 2s ease;
 }
