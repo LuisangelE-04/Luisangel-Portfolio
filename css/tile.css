@@ -1,0 +1,25 @@
+.tile-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  gap: 3rem;
+}
+
+.tile {
+  background-color: aliceblue;
+  border-radius: 2rem;
+  padding: 2rem;
+  width: 20rem;
+  height: 22rem;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.tile-icon img {
+  width: 8rem;
+  padding-bottom: 2rem;
+}
+
