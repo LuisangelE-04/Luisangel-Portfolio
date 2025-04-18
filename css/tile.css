@@ -1,7 +1,7 @@
 .tile-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   margin-top: 3rem;
   margin-bottom: 3rem;
@@ -12,8 +12,8 @@
   background-color: aliceblue;
   border-radius: 2rem;
   padding: 2rem;
-  width: 20rem;
-  height: 22rem;
+  width: 25rem;
+  height: 27rem;
   text-align: center;
   box-sizing: border-box;
 }
@@ -23,3 +23,8 @@
   padding-bottom: 2rem;
 }
 
+.tile p {
+  font-size: 1.25rem;
+  font-weight: 900;
+  line-height: 1.75rem;
+}
