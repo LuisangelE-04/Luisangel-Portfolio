@@ -5,5 +5,7 @@
 }
 
 .about h2 {
-  font-size: 3rem;
+  font-size: 4rem;
+  text-align: center;
+  padding-bottom: 3rem;
 }
