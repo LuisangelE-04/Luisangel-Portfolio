@@ -17,12 +17,14 @@
   text-align: center;
   box-sizing: border-box;
   box-shadow: inset 0 0 10 1;
-  box-shadow: 0 0 30 2;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
 }
 
 .tile-icon img {
   width: 8rem;
   padding-bottom: 2rem;
+  mix-blend-mode: multiply;
 }
 
 .tile p {
@@ -30,3 +32,19 @@
   font-weight: 900;
   line-height: 1.75rem;
 }
+
+.experience .tile ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+}
+
+.experience .tile li {
+  position: relative;
+  padding: 0.8rem 0 0.5rem 1rem;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+
