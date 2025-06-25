@@ -23,7 +23,7 @@
 
 .tile-icon img {
   width: 8rem;
-  padding-bottom: 2rem;
+  padding-bottom: 1rem;
   mix-blend-mode: multiply;
 }
 
@@ -47,4 +47,6 @@
   font-size: 1rem;
 }
 
-
+.experience .tile h4 {
+  margin: 0 0 0.5rem 0
+}
