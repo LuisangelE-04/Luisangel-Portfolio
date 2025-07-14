@@ -33,20 +33,47 @@
   line-height: 1.75rem;
 }
 
-.experience .tile ul {
+.tile ul {
   list-style: none;
   padding: 0;
   margin: 0;
   text-align: left;
 }
 
-.experience .tile li {
+.tile li {
   position: relative;
   padding: 0.8rem 0 0.5rem 1rem;
   margin-bottom: 0.5rem;
   font-size: 1rem;
 }
 
-.experience .tile h4 {
+.tile h4 {
   margin: 0 0 0.5rem 0
+}
+
+.tile a {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #333;
+  text-decoration: none;
+  padding: 0.8rem 2rem;
+  border-radius: 20px;
+  font-weight: 600;
+  margin-top: 1.5rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.tile a::after {
+  content: ' →';
+  font-size: 1.1rem;
+  transition: transform 0.3s ease;
+}
+
+.tile a:hover {
+  background: rgba(255, 247, 219, 0.281);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
 }

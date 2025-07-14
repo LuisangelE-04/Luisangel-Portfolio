@@ -2,12 +2,6 @@
   height: auto;
 }
 
-.experience h2 {
-  font-size: 4rem;
-  text-align: center;
-  padding-bottom: 3rem;
-}
-
 .experience ul li {
   display: flex;
   justify-content: space-between;

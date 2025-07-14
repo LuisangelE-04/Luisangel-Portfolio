@@ -16,3 +16,9 @@ html {
   scroll-behavior: smooth;
   scroll-padding-top: 4.75rem;
 }
+
+h2 {
+  font-size: 4rem;
+  text-align: center;
+  padding-bottom: 3rem;
+}
