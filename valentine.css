@@ -13,6 +13,26 @@ body {
   align-items: center;
   min-height: 100vh;
   margin: 0;
+  position: relative;
+}
+
+.envelope-back {
+  background-color: pink;
+  position: absolute;
+  z-index: 0;
+  width: 95%;
+  display: flex;
+  justify-content: center;
+  animation: moveDown 2s ease forwards;
+}
+
+@keyframes moveDown {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(50%);
+  }
 }
 
 .card {
@@ -21,6 +41,9 @@ body {
   padding: 2rem;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   text-align: center;
+  position: relative;
+  width: 25rem;
+  z-index: 1;
 }
 
 h1 {
