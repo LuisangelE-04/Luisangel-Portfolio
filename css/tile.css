@@ -13,12 +13,97 @@
   border-radius: 2rem;
   padding: 2rem;
   width: 25rem;
-  height: 27rem;
+  min-height: 27rem;
+  max-height: 27rem;
+  overflow: hidden;
   text-align: center;
   box-sizing: border-box;
-  box-shadow: inset 0 0 10 1;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(10px);
+  transition: max-height 0.35s ease, box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.tile:hover {
+  max-height: 36rem;
+  box-shadow: 0 10px 28px rgba(0,0,0,0.14);
+  overflow: visible;
+  transform: translateY(-2px);
+}
+
+.tile.expanded {
+  max-height: 1000px;
+  overflow: visible;
+}
+
+.tile:hover .hidden-row,
+.tile.expanded .hidden-row {
+  max-height: 3rem;
+  opacity: 1;
+  margin-bottom: 0.25rem;
+  padding: 0.4rem 0 0.25rem 1rem;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.tile a:hover {
+  background: rgba(255, 247, 219, 0.281);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.tile-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  align-self: center;
+  margin-top: 0.5rem;
+  padding: 0.6rem 1rem;
+  border-radius: 999px;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  background: rgba(255, 255, 255, 0.4);
+  color: #333;
+  font-weight: 600;
+  cursor: pointer;
+  transition: box-shadow 0.25s ease, transform 0.25s ease, background 0.25s ease;
+}
+
+.tile-toggle::after {
+  content: '+';
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 1.9rem;
+  height: 1.9rem;
+  border-radius: 50%;
+  background: rgba(255, 247, 219, 0.8);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  font-size: 1.1rem;
+  font-weight: 700;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.tile-toggle:hover {
+  background: rgba(255, 255, 255, 0.7);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
+  transform: translateY(-1px);
+}
+
+.tile.expanded .tile-toggle::after {
+  opacity: 0;
+  transform: scale(0.6);
+}
+
+.hidden-row {
+  max-height: 0;
+  opacity: 0;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  transition: max-height 0.35s ease, opacity 0.25s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
 
 .tile-icon img {
@@ -41,13 +126,13 @@
 
 .tile li {
   position: relative;
-  padding: 0.8rem 0 0.5rem 1rem;
-  margin-bottom: 0.5rem;
+  padding: 0.4rem 0 0.25rem 1rem;
+  margin-bottom: 0.25rem;
   font-size: 1rem;
 }
 
 .tile h4 {
-  margin: 0 0 0.5rem 0
+  margin: 0 0 0.5rem 0;
 }
 
 .tile a {
@@ -69,10 +154,4 @@
   content: ' →';
   font-size: 1.1rem;
   transition: transform 0.3s ease;
-}
-
-.tile a:hover {
-  background: rgba(255, 247, 219, 0.281);
-  transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
 }
