@@ -43,11 +43,12 @@ document.addEventListener('DOMContentLoaded', () => {
   cougarBtn.addEventListener('click', function (event) {
     event.stopPropagation();
 
-    // Check if the device supports hover and the element is currently hovered
-    const isHovering = window.matchMedia('(hover: hover)').matches && tile.matches(':hover');
+    // Treat "hover block" only for fine pointers (mice). Touch devices should always toggle.
+    const isMouse = window.matchMedia('(pointer: fine)').matches;
+    const isHovering = isMouse && tile.matches(':hover');
 
-    // If hovering and not already locked open, prevent clicking "Show Less" from locking it
     if (isHovering && !tile.classList.contains('expanded')) {
+      // On desktop, avoid locking the tile open while hovered.
       return;
     }
 
